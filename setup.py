@@ -8,7 +8,6 @@ try:
     long_description = long_description.replace("\r", "")  # YOU  NEED THIS LINE
 except (OSError, ImportError):
     print("Pandoc not found. Long_description conversion failure.")
-    import io
     # pandoc is not installed, fallback to using raw contents
     f = open('README.md', encoding="utf-8")
     try:
