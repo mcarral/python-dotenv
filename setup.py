@@ -9,7 +9,7 @@ try:
 except (OSError, ImportError):
     print("Pandoc not found. Long_description conversion failure.")
     # pandoc is not installed, fallback to using raw contents
-    f = open('README.md', encoding="utf-8")
+    f = open('README.md', 'r')
     try:
         long_description = f.read()
     finally: f.close()
